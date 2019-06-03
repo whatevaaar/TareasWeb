@@ -1,0 +1,14 @@
+<?xml version = "1.0" encoding = "UTF-8" ?>
+<xs:element nombre="carta">
+  <xs:complexType mixed="true">
+    <xs:sequence>
+      <xs:element nombre="nombre" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+</xs:element>
+
+
+
+<carta>
+  Para <nombre>Mi</nombre>.
+</carta>

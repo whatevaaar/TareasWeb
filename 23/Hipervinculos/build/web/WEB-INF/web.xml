@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+    <servlet>
+        <servlet-name>GeneraTablas</servlet-name>
+        <servlet-class>GeneraTablas</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>GenerarFormularios</servlet-name>
+        <servlet-class>GenerarFormularios</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>GeneraFormularios</servlet-name>
+        <servlet-class>GeneraFormularios</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>GeneraTablas</servlet-name>
+        <url-pattern>/GeneraTablas</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>GenerarFormularios</servlet-name>
+        <url-pattern>/GenerarFormularios</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>GeneraFormularios</servlet-name>
+        <url-pattern>/GeneraFormularios</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+</web-app>

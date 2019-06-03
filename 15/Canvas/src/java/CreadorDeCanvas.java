@@ -27,7 +27,7 @@ protected void doPost(HttpServletRequest request, HttpServletResponse response)
         out.print("<html>\n"
                 + "<head>\n"
                 + "<meta charset=utf-8 />\n"
-                + "<title>Draw a line</title>\n"
+                + "<title>Canvas</title>\n"
                 + "</head>\n"
                 + "<body>\n"
                 + "<canvas id=\"DemoCanvas\" width=\"500\" height=\"200\"></canvas>  \n"

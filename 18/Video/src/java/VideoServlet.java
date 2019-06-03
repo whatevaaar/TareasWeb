@@ -24,7 +24,7 @@ public class VideoServlet extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         String nombreDeArchivo = generarNombreDeArchivo(request);
-        reproducirAudio(nombreDeArchivo, response);
+        reproducirVideo(nombreDeArchivo, response);
     }
 
     protected String generarNombreDeArchivo(HttpServletRequest request) {
@@ -34,7 +34,7 @@ public class VideoServlet extends HttpServlet {
         return nombreDeArchivo;
     }
 
-    protected void reproducirAudio(String nombreDeArchivo, HttpServletResponse response) {
+    protected void reproducirVideo(String nombreDeArchivo, HttpServletResponse response) {
         ServletContext ct = getServletContext();
         InputStream input = ct.getResourceAsStream(nombreDeArchivo);
         response.setContentType("video/mp4");

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+    <servlet>
+        <servlet-name>EstableceParametros</servlet-name>
+        <servlet-class>EstableceParametros</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ConsigueParametros</servlet-name>
+        <servlet-class>ConsigueParametros</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>RecuperarAtributos</servlet-name>
+        <servlet-class>RecuperarAtributos</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>EstableceParametros</servlet-name>
+        <url-pattern>/EstableceParametros</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ConsigueParametros</servlet-name>
+        <url-pattern>/ConsigueParametros</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>RecuperarAtributos</servlet-name>
+        <url-pattern>/RecuperarAtributos</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+</web-app>
